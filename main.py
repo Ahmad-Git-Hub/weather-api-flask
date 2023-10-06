@@ -9,9 +9,6 @@ app = Flask(__name__)
 def home():
     return render_template("home.html")
 
-# URL Example: http://127.0.0.1:5000/najiApi/v1/10/19981025
-# STAID, SOUID,    DATE,   TG, Q_TG
-
 
 @app.route("/najiApi/v1/<station>/<date>")
 def info(station, date):
